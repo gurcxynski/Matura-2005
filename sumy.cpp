@@ -2,9 +2,10 @@
 int main()
 {
     int nums[] = { 1, 2, 6, 5, 7, 7 };
-    int max = 0, current = 0;
+    int max = nums[0], current = 0;
     for (int i : nums)
     {
+        if(i > max) max = i;
         if(current + i > 0)
         {
             current += i;
